@@ -6,30 +6,16 @@
     <meta name="theme-color" content="#ff1493">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
     
-    <!-- ========== LOVE THEMED FAVICONS ========== -->
-    <!-- Primary heart favicon for all browsers -->
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+    <!-- LOVE FAVICONS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23ff1493'%3E❤️%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23ff1493'%3E💘%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%23ff1493'%3E💖%3C/text%3E%3C/svg%3E">
     
-    <!-- Alternative love emojis for different devices -->
-    <link rel="icon" type="image/png" sizes="64x64" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💘%3C/text%3E%3C/svg%3E">
-    <link rel="icon" type="image/png" sizes="96x96" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💖%3C/text%3E%3C/svg%3E">
-    <link rel="icon" type="image/png" sizes="192x192" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💕%3C/text%3E%3C/svg%3E">
+    <title>💘 LOVE SCANNER 3000 - Bio-Metric Heart Analyzer</title>
     
-    <!-- Apple touch icon -->
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💗%3C/text%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" sizes="152x152" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💓%3C/text%3E%3C/svg%3E">
-    
-    <!-- Microsoft tile -->
-    <meta name="msapplication-TileColor" content="#ff1493">
-    <meta name="msapplication-TileImage" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💞%3C/text%3E%3C/svg%3E">
-    
-    <!-- PWA manifest for installable app -->
-    <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Bio-Metric%20Love%20Scanner%22%2C%22short_name%22%3A%22Love%20Scan%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23ff1493%22%2C%22theme_color%22%3A%22%23ff1493%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%2520viewBox%3D%270%200%20100%20100%27%253E%253Ctext%2520y%3D%27.9em%27%2520font-size%3D%2790%27%253E%25E2%259D%25A4%25EF%25B8%258F%253C%2Ftext%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D">
-    
-    <title>💘 Bio-Metric Love Scanner 3000</title>
+    <!-- html2canvas for image sharing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     
     <style>
         * {
@@ -38,237 +24,137 @@
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            user-select: none;
-        }
-
-        html {
-            height: -webkit-fill-available;
         }
 
         body {
             min-height: 100vh;
-            min-height: -webkit-fill-available;
-            background: radial-gradient(circle at 20% 30%, #ff1a4c, #4a0010);
+            background: linear-gradient(145deg, #ff1a4c, #4a0010, #2a0010);
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0;
+            padding: 10px;
             position: relative;
             overflow-x: hidden;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
         }
 
-        /* Cyber grid background */
-        .grid-overlay {
+        /* Floating hearts background */
+        .floating-hearts {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
-                linear-gradient(rgba(255, 20, 100, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 20, 100, 0.1) 1px, transparent 1px);
-            background-size: 30px 30px;
             pointer-events: none;
             z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.2;
+            animation: float 10s infinite linear;
+            color: #ff69b4;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0.2; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
         }
 
         .container {
             max-width: 420px;
             width: 100%;
-            background: rgba(18, 0, 8, 0.75);
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-radius: 48px 48px 32px 32px;
-            box-shadow: 0 30px 50px rgba(255, 0, 100, 0.4), 0 0 0 3px rgba(255, 70, 150, 0.5) inset, 0 0 30px #ff1493;
-            padding: 20px 16px 25px;
-            margin: 15px 10px;
-            border: 1px solid rgba(255, 100, 150, 0.8);
+            background: rgba(20, 0, 10, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 50px;
+            box-shadow: 0 30px 60px rgba(255, 0, 100, 0.5), 0 0 0 3px #ff69b4 inset, 0 0 50px #ff1493;
+            padding: 20px 18px;
+            margin: 10px auto;
+            border: 1px solid rgba(255, 105, 180, 0.8);
             position: relative;
             z-index: 10;
-            animation: containerPulse 3s infinite;
+            animation: containerGlow 3s infinite;
         }
 
-        @media (max-width: 380px) {
-            .container {
-                padding: 15px 12px 20px;
-                margin: 10px 8px;
-                border-radius: 36px 36px 24px 24px;
-            }
+        @keyframes containerGlow {
+            0% { box-shadow: 0 30px 60px rgba(255, 0, 100, 0.5), 0 0 0 3px #ff69b4 inset, 0 0 50px #ff1493; }
+            50% { box-shadow: 0 40px 70px rgba(255, 50, 150, 0.7), 0 0 0 4px #ffb6c1 inset, 0 0 80px #ff69b4; }
+            100% { box-shadow: 0 30px 60px rgba(255, 0, 100, 0.5), 0 0 0 3px #ff69b4 inset, 0 0 50px #ff1493; }
         }
 
-        @keyframes containerPulse {
-            0% { box-shadow: 0 30px 50px rgba(255, 0, 100, 0.4), 0 0 0 3px rgba(255, 70, 150, 0.5) inset, 0 0 30px #ff1493; }
-            50% { box-shadow: 0 30px 60px rgba(255, 50, 150, 0.7), 0 0 0 4px rgba(255, 100, 200, 0.8) inset, 0 0 50px #ff69b4; }
-            100% { box-shadow: 0 30px 50px rgba(255, 0, 100, 0.4), 0 0 0 3px rgba(255, 70, 150, 0.5) inset, 0 0 30px #ff1493; }
-        }
-
-        /* Animated scan lines */
-        .scan-lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(0deg, 
-                rgba(255, 70, 150, 0.03) 0px, 
-                rgba(255, 200, 230, 0.05) 2px, 
-                transparent 4px,
-                transparent 8px);
-            pointer-events: none;
-            border-radius: inherit;
-            z-index: 1;
-            animation: scanMove 8s linear infinite;
-        }
-
-        @keyframes scanMove {
-            0% { background-position: 0 0; }
-            100% { background-position: 0 20px; }
-        }
-
-        /* Header with biometric indicators */
-        .bio-header {
+        /* Header */
+        .love-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
             padding: 0 5px;
-            position: relative;
-            z-index: 20;
-            flex-wrap: wrap;
-            gap: 8px;
         }
 
-        .bio-status {
+        .love-status {
             display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .bio-icon {
-            font-size: 22px;
-            filter: drop-shadow(0 0 8px #ff1493);
-            animation: bioPulse 2s infinite;
-            position: relative;
-            min-width: 30px;
-            text-align: center;
+        .pulse-icon {
+            font-size: 24px;
+            animation: pulse 1.5s infinite;
+            filter: drop-shadow(0 0 10px #ff1493);
         }
 
-        @media (max-width: 380px) {
-            .bio-icon {
-                font-size: 20px;
-            }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); text-shadow: 0 0 20px #ff69b4; }
+            100% { transform: scale(1); }
         }
 
-        .bio-icon::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 30px;
-            height: 30px;
-            background: rgba(255, 20, 147, 0.3);
-            border-radius: 50%;
-            z-index: -1;
-            animation: ripple 2s infinite;
-        }
-
-        @keyframes ripple {
-            0% { width: 20px; height: 20px; opacity: 0.8; }
-            100% { width: 40px; height: 40px; opacity: 0; }
-        }
-
-        @keyframes bioPulse {
-            0% { opacity: 0.8; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.1); text-shadow: 0 0 15px #ff69b4; }
-            100% { opacity: 0.8; transform: scale(1); }
-        }
-
-        .bio-text {
-            color: #ffb6d9;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .love-badge {
             background: rgba(255, 20, 100, 0.3);
-            padding: 5px 12px;
+            padding: 6px 15px;
             border-radius: 30px;
+            color: #ffb6d9;
             border: 1px solid #ff69b4;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            white-space: nowrap;
-        }
-
-        @media (max-width: 350px) {
-            .bio-text {
-                font-size: 11px;
-                padding: 4px 8px;
-            }
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
 
         h1 {
-            font-size: clamp(24px, 8vw, 32px);
+            font-size: 32px;
             font-weight: 900;
             text-align: center;
-            background: linear-gradient(135deg, #fff0f5, #ffb6c1, #ff69b4, #ff1493);
+            background: linear-gradient(135deg, #fff, #ffb6c1, #ff69b4, #ff1493);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin: 5px 0 2px;
-            letter-spacing: -0.5px;
-            text-shadow: 0 0 30px #ff69b4, 0 0 60px #ff1493;
-            position: relative;
-            z-index: 20;
+            margin: 5px 0;
+            text-shadow: 0 0 30px #ff1493;
             line-height: 1.2;
-            word-break: break-word;
         }
 
         .subtitle {
             text-align: center;
             color: #ffa0c5;
-            font-weight: 500;
-            font-size: clamp(12px, 4vw, 14px);
+            font-size: 14px;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            background: rgba(255, 20, 100, 0.2);
-            padding: 8px 16px;
-            border-radius: 50px;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 105, 180, 0.5);
-            letter-spacing: 1px;
+            gap: 10px;
             flex-wrap: wrap;
         }
 
-        /* Camera section - Face Scanner */
-        .camera-container {
+        /* Camera Section */
+        .camera-section {
             width: 100%;
             aspect-ratio: 1/1;
             background: #1a0010;
             border-radius: 40px;
-            margin: 15px 0 10px;
+            margin: 15px 0;
             position: relative;
             overflow: hidden;
-            border: 3px solid rgba(255, 20, 147, 0.7);
-            box-shadow: 0 0 40px rgba(255, 0, 100, 0.5), inset 0 0 30px rgba(255, 0, 100, 0.3);
-            z-index: 30;
-            touch-action: none;
-        }
-
-        @media (max-width: 380px) {
-            .camera-container {
-                border-radius: 30px;
-            }
+            border: 3px solid #ff69b4;
+            box-shadow: 0 0 40px rgba(255, 0, 100, 0.5);
         }
 
         #videoElement {
@@ -276,7 +162,6 @@
             height: 100%;
             object-fit: cover;
             transform: scaleX(-1);
-            filter: contrast(1.2) saturate(1.1);
             display: none;
         }
 
@@ -284,7 +169,10 @@
             display: block;
         }
 
-        .camera-placeholder {
+        .camera-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             display: flex;
@@ -293,81 +181,38 @@
             justify-content: center;
             background: linear-gradient(145deg, #2a001a, #100008);
             color: #ffa0c5;
-            font-size: clamp(14px, 5vw, 18px);
             gap: 15px;
             text-align: center;
             padding: 20px;
         }
 
-        .camera-placeholder i {
-            font-size: clamp(50px, 20vw, 70px);
-            filter: drop-shadow(0 0 20px #ff1493);
+        .camera-overlay i {
+            font-size: 60px;
             animation: cameraPulse 2s infinite;
         }
 
         @keyframes cameraPulse {
             0% { transform: scale(1); opacity: 0.8; }
-            50% { transform: scale(1.1); opacity: 1; text-shadow: 0 0 30px #ff69b4; }
+            50% { transform: scale(1.1); opacity: 1; filter: drop-shadow(0 0 30px #ff1493); }
             100% { transform: scale(1); opacity: 0.8; }
         }
 
-        /* Face scanning overlay */
-        .scan-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 40;
-        }
-
-        .face-frame {
+        .scan-frame {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 70%;
             height: 70%;
-            border: 3px solid rgba(255, 100, 200, 0.8);
+            border: 3px solid rgba(255, 105, 180, 0.8);
             border-radius: 40px;
             box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
             animation: frameGlow 2s infinite;
+            display: none;
         }
 
-        @media (max-width: 380px) {
-            .face-frame {
-                border-radius: 30px;
-            }
-        }
-
-        .face-frame::before, .face-frame::after {
-            content: '';
-            position: absolute;
-            width: clamp(20px, 8vw, 30px);
-            height: clamp(20px, 8vw, 30px);
-            border-color: #ff69b4;
-            border-style: solid;
-        }
-
-        .face-frame::before {
-            top: -3px;
-            left: -3px;
-            border-width: 4px 0 0 4px;
-            border-radius: 20px 0 0 0;
-        }
-
-        .face-frame::after {
-            bottom: -3px;
-            right: -3px;
-            border-width: 0 4px 4px 0;
-            border-radius: 0 0 20px 0;
-        }
-
-        @keyframes frameGlow {
-            0% { border-color: rgba(255, 100, 200, 0.8); box-shadow: 0 0 20px #ff69b4; }
-            50% { border-color: rgba(255, 200, 230, 1); box-shadow: 0 0 40px #ff1493; }
-            100% { border-color: rgba(255, 100, 200, 0.8); box-shadow: 0 0 20px #ff69b4; }
+        .scan-frame.active {
+            display: block;
         }
 
         .scan-line {
@@ -375,120 +220,131 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 4px;
+            height: 3px;
             background: linear-gradient(90deg, transparent, #ff69b4, #fff, #ff69b4, transparent);
             filter: blur(2px);
-            animation: scanLineMove 3s linear infinite;
-            opacity: 0.7;
+            animation: scanMove 2s linear infinite;
         }
 
-        @keyframes scanLineMove {
+        @keyframes scanMove {
             0% { top: 0; }
             50% { top: 100%; }
             51% { top: 0; }
             100% { top: 0; }
         }
 
-        /* Fingerprint section */
-        .fingerprint-section {
-            margin: 15px 0 20px;
-            padding: clamp(12px, 4vw, 15px);
-            background: rgba(255, 20, 100, 0.1);
+        /* Fingerprint Section */
+        .fingerprint-card {
+            background: rgba(255, 20, 100, 0.15);
             border-radius: 60px;
-            border: 1px solid rgba(255, 105, 180, 0.5);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            padding: 15px 20px;
+            margin: 15px 0;
+            border: 2px solid #ff69b4;
             display: flex;
             align-items: center;
             gap: 15px;
-            position: relative;
-            z-index: 50;
             cursor: pointer;
             transition: all 0.3s;
-            touch-action: manipulation;
-            min-height: 80px;
+            backdrop-filter: blur(10px);
         }
 
-        .fingerprint-section.active {
+        .fingerprint-card:hover {
             background: rgba(255, 20, 147, 0.3);
-            border-color: #ff1493;
+            transform: scale(1.02);
+        }
+
+        .fingerprint-card.scanning {
+            background: rgba(255, 20, 147, 0.5);
             box-shadow: 0 0 40px #ff1493;
         }
 
         .fingerprint-icon {
-            font-size: clamp(40px, 12vw, 50px);
-            position: relative;
-            filter: drop-shadow(0 0 15px #ff69b4);
-            animation: fingerprintPulse 2s infinite;
+            font-size: 50px;
+            animation: fingerprintGlow 2s infinite;
         }
 
-        @keyframes fingerprintPulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); filter: drop-shadow(0 0 25px #ff1493); }
-            100% { transform: scale(1); }
+        @keyframes fingerprintGlow {
+            0% { filter: drop-shadow(0 0 5px #ff69b4); }
+            50% { filter: drop-shadow(0 0 25px #ff1493); transform: scale(1.05); }
+            100% { filter: drop-shadow(0 0 5px #ff69b4); }
         }
 
-        .fingerprint-text {
+        .fingerprint-info {
             flex: 1;
-            color: white;
-            min-width: 0;
         }
 
         .fingerprint-title {
-            font-size: clamp(16px, 5vw, 18px);
+            font-size: 18px;
             font-weight: 700;
             color: #ffb6d9;
-            margin-bottom: 4px;
-            word-break: break-word;
+            margin-bottom: 5px;
         }
 
         .fingerprint-status {
-            font-size: clamp(12px, 4vw, 14px);
             color: #ffa0c5;
+            font-size: 14px;
             display: flex;
             align-items: center;
             gap: 8px;
-            flex-wrap: wrap;
-            word-break: break-word;
-        }
-
-        .fingerprint-status i {
-            font-size: 20px;
         }
 
         .fingerprint-status.verified {
             color: #7fff7f;
-            text-shadow: 0 0 15px #00ff00;
         }
 
-        /* Scan button - ULTRA */
-        .scan-btn {
+        /* Input Field */
+        .love-input {
             width: 100%;
-            background: linear-gradient(145deg, #ff3b5c, #ff1744, #b01030);
+            padding: 18px 20px;
+            border-radius: 60px;
+            border: 2px solid #ff69b4;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 18px;
+            margin: 15px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .love-input:focus {
+            outline: none;
+            border-color: #ff1493;
+            box-shadow: 0 0 30px #ff1493;
+        }
+
+        /* Scan Button */
+        .scan-button {
+            width: 100%;
+            background: linear-gradient(145deg, #ff3b5c, #ff1744);
             border: none;
             border-radius: 60px;
-            padding: clamp(18px, 6vw, 22px) clamp(16px, 5vw, 24px);
-            margin: 15px 0 10px;
+            padding: 20px 25px;
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            font-size: clamp(20px, 7vw, 28px);
-            font-weight: 900;
-            color: white;
-            text-shadow: 0 2px 10px black;
-            box-shadow: 0 20px 30px -8px rgba(255, 0, 0, 0.7), 0 5px 0 0 #8a001a inset, 0 -5px 0 0 #ff7080 inset, 0 0 30px #ff1493;
-            transition: 0.1s ease;
+            gap: 15px;
+            box-shadow: 0 15px 25px rgba(255, 0, 0, 0.5), 0 5px 0 #8a001a inset;
             cursor: pointer;
+            margin: 15px 0;
+            transition: all 0.1s;
             position: relative;
             overflow: hidden;
-            z-index: 60;
-            letter-spacing: 1px;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
         }
 
-        .scan-btn::before {
+        .scan-button:active {
+            transform: translateY(5px);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.4), 0 2px 0 #8a001a inset;
+        }
+
+        .scan-button.disabled {
+            opacity: 0.5;
+            transform: translateY(5px);
+            pointer-events: none;
+        }
+
+        .scan-button::after {
             content: '';
             position: absolute;
             top: -50%;
@@ -497,93 +353,16 @@
             height: 200%;
             background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transform: rotate(45deg);
-            animation: btnShine 3s infinite;
+            animation: buttonShine 3s infinite;
         }
 
-        @keyframes btnShine {
-            0% { left: -50%; top: -50%; }
-            100% { left: 150%; top: 150%; }
+        @keyframes buttonShine {
+            0% { left: -50%; }
+            100% { left: 150%; }
         }
 
-        .scan-btn:active {
-            transform: translateY(5px);
-            box-shadow: 0 15px 25px -5px rgba(255, 0, 0, 0.6), 0 2px 0 0 #8a001a inset;
-        }
-
-        .scan-btn.disabled {
-            opacity: 0.5;
-            transform: translateY(5px);
-            box-shadow: 0 15px 25px -5px rgba(255, 0, 0, 0.4);
-            pointer-events: none;
-        }
-
-        /* Bio-metrics display */
-        .biometrics-panel {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 10px;
-            margin: 15px 0;
-        }
-
-        @media (max-width: 350px) {
-            .biometrics-panel {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .biometric-item {
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 30px;
-            padding: 12px;
-            border: 1px solid rgba(255, 105, 180, 0.3);
-            text-align: center;
-        }
-
-        .biometric-label {
-            color: #ffa0c5;
-            font-size: clamp(10px, 3.5vw, 12px);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .biometric-value {
-            color: white;
-            font-size: clamp(20px, 6vw, 24px);
-            font-weight: 800;
-            text-shadow: 0 0 15px #ff69b4;
-            word-break: break-word;
-        }
-
-        .scan-messages {
-            background: rgba(255, 20, 100, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 40px;
-            padding: clamp(16px, 5vw, 20px);
-            margin: 15px 0;
-            border: 2px solid rgba(255, 105, 180, 0.5);
-            box-shadow: 0 0 30px rgba(255, 0, 100, 0.3);
-        }
-
-        .current-message {
-            font-size: clamp(16px, 5vw, 20px);
-            font-weight: 600;
-            color: #ffd0e0;
-            text-align: center;
-            line-height: 1.4;
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            text-shadow: 0 0 10px #ff69b4;
-            word-break: break-word;
-        }
-
-        .progress-container {
+        /* Progress Bar */
+        .progress-bar {
             width: 100%;
             height: 15px;
             background: rgba(0, 0, 0, 0.5);
@@ -591,19 +370,19 @@
             margin: 15px 0;
             overflow: hidden;
             border: 1px solid #ff69b4;
+            display: none;
         }
 
-        .progress-bar {
+        .progress-fill {
             height: 100%;
             width: 0%;
-            background: linear-gradient(90deg, #ff90a0, #ff3b5c, #ff1493, #ff69b4);
-            border-radius: 30px;
+            background: linear-gradient(90deg, #ff90a0, #ff1744, #ff69b4);
             transition: width 0.1s linear;
             box-shadow: 0 0 30px #ff1493;
             position: relative;
         }
 
-        .progress-bar::after {
+        .progress-fill::after {
             content: '';
             position: absolute;
             top: 0;
@@ -619,24 +398,45 @@
             100% { transform: translateX(100%); }
         }
 
-        .result-card {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 20, 100, 0.2));
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 60px;
-            padding: clamp(20px, 6vw, 25px) clamp(12px, 4vw, 16px);
-            margin: 20px 0;
+        /* Messages */
+        .message-box {
+            background: rgba(255, 20, 100, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 40px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 2px solid #ff69b4;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            border: 3px solid rgba(255, 105, 180, 0.8);
-            box-shadow: 0 20px 40px rgba(255, 0, 100, 0.4), 0 0 0 2px #ffb6c1 inset;
-            transform: scale(1);
+        }
+
+        .current-message {
+            color: #ffd0e0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            text-shadow: 0 0 10px #ff69b4;
+        }
+
+        /* Result Card */
+        .result-card {
+            background: linear-gradient(145deg, rgba(255, 105, 180, 0.2), rgba(255, 20, 100, 0.3));
+            backdrop-filter: blur(20px);
+            border-radius: 60px;
+            padding: 25px 20px;
+            margin: 20px 0;
+            border: 3px solid #ff69b4;
+            box-shadow: 0 20px 40px rgba(255, 0, 100, 0.4);
+            text-align: center;
+            display: none;
             animation: resultPop 0.5s;
         }
 
-        @media (max-width: 380px) {
-            .result-card {
-                border-radius: 40px;
-            }
+        .result-card.show {
+            display: block;
         }
 
         @keyframes resultPop {
@@ -644,761 +444,967 @@
             100% { transform: scale(1); opacity: 1; }
         }
 
-        .result-card.hidden {
-            display: none;
-        }
-
-        .percentage {
-            font-size: clamp(60px, 20vw, 100px);
+        .love-percentage {
+            font-size: 90px;
             font-weight: 900;
-            background: linear-gradient(145deg, #fff0f5, #ffb6c1, #ff69b4);
+            background: linear-gradient(145deg, #fff, #ffb6c1, #ff69b4);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
             line-height: 1;
-            text-shadow: 0 0 50px #ff1493, 0 0 100px #ff69b4;
-            margin-bottom: 10px;
-            position: relative;
-            display: inline-block;
+            text-shadow: 0 0 50px #ff1493;
+            margin: 10px 0;
         }
 
+        .result-text {
+            color: #ffb6d9;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .result-message {
+            color: #ffa0c5;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 40px;
+            margin: 15px 0;
+        }
+
+        /* Bio Metrics */
+        .bio-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .metric-item {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 30px;
+            padding: 12px;
+            border: 1px solid #ff69b4;
+            text-align: center;
+        }
+
+        .metric-label {
+            color: #ffa0c5;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .metric-value {
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            text-shadow: 0 0 15px #ff69b4;
+        }
+
+        /* Action Buttons */
         .action-buttons {
             display: flex;
             gap: 12px;
-            margin: 20px 0 15px;
+            margin: 20px 0;
             flex-wrap: wrap;
-            justify-content: center;
         }
 
         .action-btn {
             flex: 1;
-            min-width: 110px;
+            min-width: 120px;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 2px solid #ff69b4;
             border-radius: 50px;
-            padding: clamp(12px, 4vw, 16px) clamp(8px, 3vw, 10px);
+            padding: 15px 10px;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.1s;
+            backdrop-filter: blur(10px);
+        }
+
+        .action-btn:active {
+            transform: translateY(3px);
+            background: rgba(255, 105, 180, 0.3);
+        }
+
+        /* Letter Generator - BEAUTIFUL DESIGN */
+        .letter-generator {
+            margin-top: 25px;
+            padding: 20px;
+            background: linear-gradient(145deg, rgba(255, 105, 180, 0.15), rgba(255, 20, 100, 0.25));
+            border-radius: 50px;
+            border: 2px dashed #ff69b4;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .letter-generator::before {
+            content: '💌💌💌';
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            font-size: 40px;
+            opacity: 0.1;
+            animation: letterFloat 20s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes letterFloat {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .letter-title {
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            color: #ffb6d9;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .letter-input-area {
+            width: 100%;
+            padding: 18px;
+            border-radius: 40px;
+            border: 2px solid #ff69b4;
+            background: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 16px;
+            margin-bottom: 15px;
+            resize: none;
+            min-height: 100px;
+        }
+
+        .letter-input-area:focus {
+            outline: none;
+            border-color: #ff1493;
+            box-shadow: 0 0 30px #ff1493;
+        }
+
+        .generate-letter-btn {
+            width: 100%;
+            background: linear-gradient(145deg, #ff69b4, #ff1493);
+            border: none;
+            border-radius: 60px;
+            padding: 16px;
+            font-size: 20px;
             font-weight: 700;
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
-            font-size: clamp(14px, 4.5vw, 16px);
-            box-shadow: 0 8px 0 0 #8a0040, 0 0 20px #ff1493;
-            transition: 0.1s ease;
+            gap: 10px;
             cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 20px rgba(255, 0, 100, 0.4);
         }
 
-        .action-btn:active {
-            transform: translateY(5px);
-            box-shadow: 0 3px 0 0 #8a0040, 0 0 20px #ff1493;
+        /* Beautiful Love Letter Card */
+        .love-letter-card {
+            background: linear-gradient(145deg, #fff0f5, #ffe4ec);
+            border-radius: 40px;
+            padding: 30px 20px;
+            margin-top: 20px;
+            border: 3px solid #ff69b4;
+            box-shadow: 0 20px 40px rgba(255, 0, 100, 0.3), 0 0 0 5px #fff inset;
+            position: relative;
+            display: none;
+            transform-origin: center;
+            animation: letterAppear 0.5s;
         }
 
-        .bio-indicator {
+        .love-letter-card.show {
+            display: block;
+        }
+
+        @keyframes letterAppear {
+            0% { transform: rotate(-5deg) scale(0.9); opacity: 0; }
+            100% { transform: rotate(0) scale(1); opacity: 1; }
+        }
+
+        .letter-header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .letter-header::before,
+        .letter-header::after {
+            content: '❤️';
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .letter-header::before {
+            left: 20px;
+        }
+
+        .letter-header::after {
+            right: 20px;
+        }
+
+        .letter-header h3 {
+            color: #ff1493;
+            font-size: 28px;
+            font-weight: 900;
+            text-shadow: 2px 2px 0 #ffb6c1;
+        }
+
+        .letter-to {
+            font-size: 22px;
+            color: #d42e5e;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .letter-content {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #4a0010;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 30px;
+            font-weight: 500;
+            min-height: 120px;
+            word-break: break-word;
+            border-left: 6px solid #ff69b4;
+        }
+
+        .letter-signature {
+            text-align: right;
+            font-size: 24px;
+            color: #ff1493;
+            margin-top: 20px;
+            font-weight: 700;
+            border-top: 2px dashed #ff69b4;
+            padding-top: 15px;
+        }
+
+        .letter-actions {
             display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .letter-action-btn {
+            flex: 1;
+            background: rgba(255, 105, 180, 0.2);
+            border: 2px solid #ff1493;
+            border-radius: 40px;
+            padding: 12px;
+            color: #ff1493;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            gap: clamp(10px, 4vw, 20px);
-            margin: 10px 0;
-            color: #ffb6d9;
-            font-size: clamp(12px, 4vw, 14px);
-            flex-wrap: wrap;
+            gap: 5px;
+            cursor: pointer;
         }
 
-        .bio-dot {
-            width: 10px;
-            height: 10px;
-            background: #ff1744;
-            border-radius: 50%;
-            display: inline-block;
-            margin-right: 5px;
-            box-shadow: 0 0 15px #ff1493;
-            animation: dotPulse 1.5s infinite;
-        }
-
-        @keyframes dotPulse {
-            0% { opacity: 0.5; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.3); background: #7fff7f; box-shadow: 0 0 20px #00ff00; }
-            100% { opacity: 0.5; transform: scale(1); }
-        }
-
-        input {
-            width: 100%;
-            padding: clamp(14px, 5vw, 18px) clamp(16px, 5vw, 20px);
-            border-radius: 60px;
-            border: 2px solid #ff69b4;
-            background: rgba(0,0,0,0.5);
+        .letter-action-btn:active {
+            background: #ff1493;
             color: white;
-            font-size: clamp(16px, 5vw, 18px);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            -webkit-appearance: none;
-            appearance: none;
-            outline: none;
-        }
-
-        input:focus {
-            border-color: #ff1493;
-            box-shadow: 0 0 30px #ff1493;
-        }
-
-        input::placeholder {
-            color: rgba(255, 182, 217, 0.5);
         }
 
         .footer {
             text-align: center;
             color: #ffa0c5;
-            margin-top: 15px;
-            font-size: clamp(10px, 3.5vw, 12px);
-            opacity: 0.8;
-            letter-spacing: 1px;
-            word-break: break-word;
-            padding: 0 5px;
-        }
-
-        /* Safe area insets for notched phones */
-        @supports (padding: max(0px)) {
-            .container {
-                padding-left: max(16px, env(safe-area-inset-left));
-                padding-right: max(16px, env(safe-area-inset-right));
-                padding-bottom: max(25px, env(safe-area-inset-bottom));
-            }
-        }
-
-        /* Prevent zoom on input focus for iOS */
-        @media screen and (-webkit-min-device-pixel-ratio: 0) { 
-            select,
-            textarea,
-            input {
-                font-size: 16px !important;
-            }
-        }
-
-        /* Landscape mode adjustments */
-        @media (orientation: landscape) and (max-height: 500px) {
-            .container {
-                margin: 5px;
-                padding: 10px;
-            }
-            
-            .camera-container {
-                max-width: 300px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            .bio-header {
-                margin-bottom: 5px;
-            }
-            
-            .fingerprint-section {
-                margin: 10px 0;
-            }
+            font-size: 12px;
+            margin-top: 20px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="grid-overlay"></div>
-    
-    <div class="container">
-        <div class="scan-lines"></div>
-        
-        <!-- Bio-metric Header -->
-        <div class="bio-header">
-            <div class="bio-status">
-                <span class="bio-icon" id="faceStatus">👤</span>
-                <span class="bio-icon" id="fingerStatus">🖐️</span>
-                <span class="bio-icon">❤️</span>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <div class="container" id="scanContainer">
+        <!-- Header -->
+        <div class="love-header">
+            <div class="love-status">
+                <span class="pulse-icon" id="faceStatus">👤</span>
+                <span class="pulse-icon" id="fingerStatus">🖐️</span>
+                <span class="pulse-icon">❤️</span>
             </div>
-            <div class="bio-text">BIOMETRIC LOCK 🔒</div>
+            <div class="love-badge">BIO ACTIVE</div>
         </div>
 
-        <h1>BIO-LOVE SCAN</h1>
+        <h1>LOVE FREQUENCY<br>ANALYZER 3000</h1>
         <div class="subtitle">
-            <span>🔬</span> DNA Match + Face Recognition <span>🧬</span>
+            <span>🔬</span> BIO-METRIC HEART SCAN <span>🧬</span>
         </div>
 
-        <!-- Face Scanner (Camera) -->
-        <div class="camera-container" id="cameraContainer">
+        <!-- Camera Section -->
+        <div class="camera-section" id="cameraSection">
             <video id="videoElement" autoplay playsinline></video>
-            <div class="camera-placeholder" id="cameraPlaceholder">
+            <div class="camera-overlay" id="cameraOverlay">
                 <i>📸</i>
-                <span>Camera ready for face scan</span>
-                <span style="font-size: 12px;">Position face in frame</span>
+                <span>Camera Ready</span>
+                <small>Position face in frame</small>
             </div>
-            
-            <!-- Scanning Overlay (shown during scan) -->
-            <div class="scan-overlay" id="scanOverlay" style="display: none;">
-                <div class="face-frame"></div>
+            <div class="scan-frame" id="scanFrame">
                 <div class="scan-line"></div>
             </div>
         </div>
 
         <!-- Fingerprint Scanner -->
-        <div class="fingerprint-section" id="fingerprintSection">
+        <div class="fingerprint-card" id="fingerprintCard">
             <div class="fingerprint-icon" id="fingerprintIcon">🖐️🔍</div>
-            <div class="fingerprint-text">
+            <div class="fingerprint-info">
                 <div class="fingerprint-title">FINGERPRINT SCANNER</div>
                 <div class="fingerprint-status" id="fingerprintStatus">
-                    <span>⏳ Tap to scan fingerprint...</span>
+                    <span>⏳ Tap to start scan</span>
                 </div>
             </div>
         </div>
 
-        <!-- Bio-metrics Live Data -->
-        <div class="biometrics-panel" id="biometricsPanel" style="display: none;">
-            <div class="biometric-item">
-                <div class="biometric-label">Face Match</div>
-                <div class="biometric-value" id="faceMatchValue">0%</div>
-            </div>
-            <div class="biometric-item">
-                <div class="biometric-label">Fingerprint</div>
-                <div class="biometric-value" id="fingerMatchValue">0%</div>
-            </div>
-            <div class="biometric-item">
-                <div class="biometric-label">Heart Rate</div>
-                <div class="biometric-value" id="heartRate">72 BPM</div>
-            </div>
-            <div class="biometric-item">
-                <div class="biometric-label">Love DNA</div>
-                <div class="biometric-value" id="loveDNA">99.9%</div>
-            </div>
-        </div>
+        <!-- Name Input -->
+        <input type="text" class="love-input" id="nameInput" placeholder="Enter your crush's name..." value="My Love">
 
-        <!-- Name Input (Bio-linked) -->
-        <div style="margin: 10px 0; position: relative; z-index: 70;">
-            <input type="text" id="nameInput" placeholder="Enter name for DNA match..." value="Subject-271">
-        </div>
-
-        <!-- ULTRA SCAN BUTTON -->
-        <button class="scan-btn" id="scanBtn">
-            <span>🔬</span> INITIATE BIO-SCAN <span>🧬</span>
+        <!-- Scan Button -->
+        <button class="scan-button" id="scanButton">
+            <span>🔬</span> INITIATE LOVE SCAN <span>💘</span>
         </button>
 
-        <!-- Progress & Messages -->
-        <div class="progress-container" id="progressContainer" style="display: none;">
-            <div class="progress-bar" id="progressBar"></div>
+        <!-- Progress Bar -->
+        <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
         </div>
 
-        <div class="scan-messages" id="scanMessages">
+        <!-- Message Box -->
+        <div class="message-box" id="messageBox">
             <div class="current-message" id="currentMessage">
-                <span>🧬</span> Awaiting biometric authentication <span>🔬</span>
+                ✨ Ready to scan your love frequency ✨
+            </div>
+        </div>
+
+        <!-- Bio Metrics Panel (Hidden initially) -->
+        <div class="bio-metrics" id="bioMetrics" style="display: none;">
+            <div class="metric-item">
+                <div class="metric-label">FACE MATCH</div>
+                <div class="metric-value" id="faceMetric">0%</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">FINGERPRINT</div>
+                <div class="metric-value" id="fingerMetric">0%</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-label">HEART RATE</div>
+                <div class="metric-value" id="heartMetric">-- BPM</div>
             </div>
         </div>
 
         <!-- Result Card -->
-        <div class="result-card hidden" id="resultCard">
-            <div class="percentage" id="percentage">0%</div>
-            <div style="color: #ffb6d9; font-size: clamp(18px, 6vw, 22px); font-weight: 700; margin: 10px 0;" id="resultDesc"></div>
-            <div style="color: #ffa0c5; font-size: clamp(14px, 5vw, 18px); background: rgba(255,20,100,0.3); padding: 12px; border-radius: 40px; margin: 10px 0;" id="playfulLine"></div>
+        <div class="result-card" id="resultCard">
+            <div class="love-percentage" id="lovePercentage">0%</div>
+            <div class="result-text" id="resultText"></div>
+            <div class="result-message" id="resultMessage"></div>
             
-            <!-- Bio Confidence -->
-            <div class="bio-indicator">
-                <span><span class="bio-dot"></span> Face: <span id="faceConf">98%</span></span>
-                <span><span class="bio-dot"></span> Finger: <span id="fingerConf">97%</span></span>
-                <span><span class="bio-dot"></span> DNA: <span id="dnaConf">99%</span></span>
+            <!-- Confidence Indicators -->
+            <div style="display: flex; justify-content: center; gap: 20px; margin: 15px 0;">
+                <span><span class="pulse-icon">👤</span> <span id="faceResult">0%</span></span>
+                <span><span class="pulse-icon">🖐️</span> <span id="fingerResult">0%</span></span>
+                <span><span class="pulse-icon">🧬</span> <span id="dnaResult">0%</span></span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn" id="shareTextBtn">
+                    <span>💬</span> TEXT
+                </button>
+                <button class="action-btn" id="scanAgainBtn">
+                    <span>🔄</span> SCAN AGAIN
+                </button>
             </div>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="action-buttons" id="actionButtons" style="display: none;">
-            <button class="action-btn" id="shareBioBtn">
-                <span>🔬</span> Share Bio-Result
+        <!-- BEAUTIFUL LOVE LETTER GENERATOR -->
+        <div class="letter-generator">
+            <div class="letter-title">
+                <span>💌</span> LOVE LETTER STUDIO <span>💌</span>
+            </div>
+            
+            <textarea class="letter-input-area" id="letterInput" placeholder="Write your heart out... e.g., I've been thinking about you...">Every time I see you, my heart skips a beat. You're the most beautiful person I've ever met.</textarea>
+            
+            <button class="generate-letter-btn" id="generateLetterBtn">
+                <span>✨</span> CREATE BEAUTIFUL LETTER <span>💖</span>
             </button>
-            <button class="action-btn" id="scanAgainBtn">
-                <span>🔄</span> New Scan
-            </button>
+
+            <!-- Beautiful Letter Card -->
+            <div class="love-letter-card" id="loveLetterCard">
+                <div class="letter-header">
+                    <h3>💘 LOVE LETTER 💘</h3>
+                </div>
+                
+                <div class="letter-to" id="letterTo">To: My Dearest Love</div>
+                
+                <div class="letter-content" id="letterContent">
+                    <!-- Letter content goes here -->
+                </div>
+                
+                <div class="letter-signature" id="letterSignature">
+                    Forever yours,<br>
+                    <span style="font-size: 28px;">❤️</span>
+                </div>
+
+                <div class="letter-actions">
+                    <button class="letter-action-btn" id="shareLetterBtn">
+                        <span>📤</span> SHARE
+                    </button>
+                    <button class="letter-action-btn" id="saveLetterBtn">
+                        <span>💾</span> SAVE
+                    </button>
+                    <button class="letter-action-btn" id="newLetterBtn">
+                        <span>✨</span> NEW
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div class="footer">
-            ⚡ BIO-METRIC LOVE LAB · UMAR TECHNOLOGIES ⚡
+            💗 BIO-METRIC LOVE LAB · MADE WITH ❤️ BY UMAR 💗
         </div>
     </div>
 
     <script>
-        (function() {
-            // ==================== DOM Elements ====================
-            const video = document.getElementById('videoElement');
-            const cameraPlaceholder = document.getElementById('cameraPlaceholder');
-            const scanOverlay = document.getElementById('scanOverlay');
-            const fingerprintSection = document.getElementById('fingerprintSection');
-            const fingerprintStatus = document.getElementById('fingerprintStatus');
-            const fingerprintIcon = document.getElementById('fingerprintIcon');
-            const faceStatus = document.getElementById('faceStatus');
-            const fingerStatus = document.getElementById('fingerStatus');
-            const scanBtn = document.getElementById('scanBtn');
-            const progressContainer = document.getElementById('progressContainer');
-            const progressBar = document.getElementById('progressBar');
-            const currentMessage = document.getElementById('currentMessage');
-            const resultCard = document.getElementById('resultCard');
-            const percentageEl = document.getElementById('percentage');
-            const resultDesc = document.getElementById('resultDesc');
-            const playfulLine = document.getElementById('playfulLine');
-            const actionButtons = document.getElementById('actionButtons');
-            const shareBioBtn = document.getElementById('shareBioBtn');
-            const scanAgainBtn = document.getElementById('scanAgainBtn');
-            const nameInput = document.getElementById('nameInput');
-            const faceMatchValue = document.getElementById('faceMatchValue');
-            const fingerMatchValue = document.getElementById('fingerMatchValue');
-            const heartRate = document.getElementById('heartRate');
-            const loveDNA = document.getElementById('loveDNA');
-            const biometricsPanel = document.getElementById('biometricsPanel');
-            const faceConf = document.getElementById('faceConf');
-            const fingerConf = document.getElementById('fingerConf');
-            const dnaConf = document.getElementById('dnaConf');
+        // Initialize floating hearts
+        function createFloatingHearts() {
+            const container = document.getElementById('floatingHearts');
+            for (let i = 0; i < 30; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = ['❤️', '💘', '💖', '💗', '💓', '💕'][Math.floor(Math.random() * 6)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDuration = (Math.random() * 10 + 5) + 's';
+                heart.style.animationDelay = Math.random() * 10 + 's';
+                heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                container.appendChild(heart);
+            }
+        }
 
-            // ==================== State ====================
-            let stream = null;
-            let faceScanned = false;
-            let fingerScanned = false;
-            let scanActive = false;
-            let scanInterval = null;
-            let progress = 0;
-            let heartRateInterval = null;
-            
-            // Bio metrics
-            let faceMatchPercent = 0;
-            let fingerMatchPercent = 0;
-            
-            // Bio messages
-            const scanMessages = [
-                "🔬 Analyzing facial structure...",
-                "🧬 Matching DNA patterns...",
-                "🖐️ Verifying fingerprint ridges...",
-                "❤️ Measuring heart rate variability...",
-                "📡 Scanning emotional response...",
-                "💓 Detecting love frequency...",
-                "🎯 Calculating compatibility matrix...",
-                "✨ Processing bio-rhythms...",
-                "🔮 Predicting romantic potential...",
-                "⚡ Finalizing bio-match..."
-            ];
-            
-            const resultDescriptions = [
-                "Bio-Metric Love Match",
-                "DNA Compatibility Level",
-                "Soulmate Authentication",
-                "Heart Connection Verified",
-                "Genetic Love Signature",
-                "Emotional Bond Strength"
-            ];
-            
-            const playfulLines = [
-                "Bio-match confirmed! She's the one! 🧬❤️",
-                "99.9% compatible at DNA level! 💘",
-                "Your bio-rhythms are synchronized! 🔄",
-                "Love fingerprints match perfectly! 🖐️",
-                "Heart patterns aligned! Take action! 💓",
-                "Destiny encoded in your DNA! ✨"
-            ];
+        // DOM Elements
+        const video = document.getElementById('videoElement');
+        const cameraOverlay = document.getElementById('cameraOverlay');
+        const scanFrame = document.getElementById('scanFrame');
+        const fingerprintCard = document.getElementById('fingerprintCard');
+        const fingerprintStatus = document.getElementById('fingerprintStatus');
+        const fingerprintIcon = document.getElementById('fingerprintIcon');
+        const faceStatus = document.getElementById('faceStatus');
+        const fingerStatus = document.getElementById('fingerStatus');
+        const scanButton = document.getElementById('scanButton');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
+        const currentMessage = document.getElementById('currentMessage');
+        const resultCard = document.getElementById('resultCard');
+        const lovePercentage = document.getElementById('lovePercentage');
+        const resultText = document.getElementById('resultText');
+        const resultMessage = document.getElementById('resultMessage');
+        const bioMetrics = document.getElementById('bioMetrics');
+        const faceMetric = document.getElementById('faceMetric');
+        const fingerMetric = document.getElementById('fingerMetric');
+        const heartMetric = document.getElementById('heartMetric');
+        const faceResult = document.getElementById('faceResult');
+        const fingerResult = document.getElementById('fingerResult');
+        const dnaResult = document.getElementById('dnaResult');
+        const shareTextBtn = document.getElementById('shareTextBtn');
+        const scanAgainBtn = document.getElementById('scanAgainBtn');
+        const nameInput = document.getElementById('nameInput');
+        
+        // Letter Generator Elements
+        const letterInput = document.getElementById('letterInput');
+        const generateLetterBtn = document.getElementById('generateLetterBtn');
+        const loveLetterCard = document.getElementById('loveLetterCard');
+        const letterContent = document.getElementById('letterContent');
+        const letterTo = document.getElementById('letterTo');
+        const letterSignature = document.getElementById('letterSignature');
+        const shareLetterBtn = document.getElementById('shareLetterBtn');
+        const saveLetterBtn = document.getElementById('saveLetterBtn');
+        const newLetterBtn = document.getElementById('newLetterBtn');
 
-            // ==================== Camera Functions ====================
-            async function startCamera() {
-                try {
-                    const constraints = {
-                        video: { 
-                            facingMode: "user",
-                            width: { ideal: 640 },
-                            height: { ideal: 480 },
-                            frameRate: { ideal: 30 }
-                        } 
-                    };
-                    
-                    stream = await navigator.mediaDevices.getUserMedia(constraints);
-                    video.srcObject = stream;
-                    video.classList.add('active');
-                    cameraPlaceholder.style.display = 'none';
-                    
-                    // Simulate face detection after 2 seconds
-                    setTimeout(() => {
-                        if (!faceScanned) {
-                            faceScanned = true;
-                            faceStatus.innerHTML = '👤✅';
-                            faceMatchPercent = Math.floor(Math.random() * 20) + 75; // 75-95%
-                            faceMatchValue.textContent = faceMatchPercent + '%';
-                            updateFingerprintStatus();
-                            
-                            currentMessage.innerHTML = '<span>✅</span> Face detected! Now scan fingerprint <span>🖐️</span>';
-                        }
-                    }, 2000);
-                    
-                } catch (err) {
-                    console.error("Camera error:", err);
-                    cameraPlaceholder.innerHTML = `
-                        <i>📵</i>
-                        <span>Camera access denied</span>
-                        <span style="font-size: 10px;">Using face simulation</span>
-                    `;
-                    
-                    // Simulate face detection even without camera
-                    setTimeout(() => {
+        // State
+        let stream = null;
+        let faceScanned = false;
+        let fingerScanned = false;
+        let scanActive = false;
+        let scanInterval = null;
+        let progress = 0;
+        let faceMatch = 0;
+        let fingerMatch = 0;
+        let heartRateInterval = null;
+
+        // Messages
+        const scanMessages = [
+            "🔬 Scanning heart rhythm...",
+            "🧬 Analyzing DNA patterns...",
+            "🖐️ Verifying fingerprint...",
+            "❤️ Measuring love frequency...",
+            "💓 Detecting emotional response...",
+            "✨ Calculating compatibility...",
+            "💘 Processing romantic potential...",
+            "🔮 Reading soul connection..."
+        ];
+
+        const resultDescriptions = [
+            "LOVE FREQUENCY DETECTED",
+            "HEART CONNECTION FOUND",
+            "SOULMATED SIGNAL LOCKED",
+            "ROMANTIC COMPATIBILITY",
+            "EMOTIONAL BOND STRENGTH"
+        ];
+
+        const playfulMessages = [
+            "She's thinking about you right now! 💭",
+            "Buy her chocolate immediately! 🍫",
+            "Text her - she's waiting! 💬",
+            "100% soulmate material! 💑",
+            "The universe wants you together! 🌟",
+            "Love is in the air! 💨❤️"
+        ];
+
+        // Camera Functions
+        async function startCamera() {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { 
+                        facingMode: "user",
+                        width: { ideal: 640 },
+                        height: { ideal: 480 }
+                    } 
+                });
+                video.srcObject = stream;
+                video.classList.add('active');
+                cameraOverlay.style.display = 'none';
+                
+                // Simulate face detection
+                setTimeout(() => {
+                    if (!faceScanned) {
                         faceScanned = true;
-                        faceStatus.innerHTML = '👤✅(sim)';
-                        faceMatchPercent = 89;
-                        faceMatchValue.textContent = '89%';
-                        currentMessage.innerHTML = '<span>✅</span> Face simulation complete! Tap fingerprint <span>🖐️</span>';
-                    }, 1500);
-                }
-            }
-
-            // Stop camera
-            function stopCamera() {
-                if (stream) {
-                    stream.getTracks().forEach(track => {
-                        track.stop();
-                    });
-                    stream = null;
-                }
-                video.classList.remove('active');
-                cameraPlaceholder.style.display = 'flex';
-            }
-
-            // ==================== Fingerprint Functions ====================
-            function simulateFingerprintScan() {
-                if (fingerScanned) return;
-                
-                fingerprintSection.classList.add('active');
-                fingerprintStatus.innerHTML = '<span>🔍</span> Scanning fingerprint... <span class="bio-dot"></span>';
-                fingerprintIcon.style.animation = 'fingerprintPulse 0.5s infinite';
-                
-                let scanProgress = 0;
-                const fingerprintInterval = setInterval(() => {
-                    scanProgress += 10;
-                    
-                    if (scanProgress >= 100) {
-                        clearInterval(fingerprintInterval);
-                        
-                        // Fingerprint verified
-                        fingerScanned = true;
-                        fingerMatchPercent = Math.floor(Math.random() * 15) + 80; // 80-95%
-                        fingerMatchValue.textContent = fingerMatchPercent + '%';
-                        
-                        fingerprintStatus.innerHTML = '<span>✅</span> Fingerprint verified! <span>🖐️</span>';
-                        fingerprintStatus.classList.add('verified');
-                        fingerprintIcon.innerHTML = '🖐️✅';
-                        fingerStatus.innerHTML = '🖐️✅';
-                        fingerprintSection.classList.remove('active');
-                        
-                        currentMessage.innerHTML = '<span>✅✅</span> Bio-metrics ready! Press INITIATE BIO-SCAN <span>🔬</span>';
-                        
-                        // Auto-enable scan button highlight
-                        scanBtn.style.boxShadow = '0 0 50px #7fff7f, 0 20px 30px -8px rgba(255,0,0,0.7)';
-                    } else {
-                        fingerprintStatus.innerHTML = `<span>🔍</span> Scanning... ${scanProgress}% <span class="bio-dot"></span>`;
+                        faceStatus.innerHTML = '👤✅';
+                        faceMatch = Math.floor(Math.random() * 20) + 75;
+                        faceMetric.textContent = faceMatch + '%';
+                        currentMessage.innerHTML = '✅ Face detected! Tap fingerprint scanner 👇';
+                        updateFingerprintStatus();
                     }
-                }, 100);
+                }, 2000);
+                
+            } catch (err) {
+                console.log("Camera error - using simulation");
+                cameraOverlay.innerHTML = `
+                    <i>📱</i>
+                    <span>Camera Simulation</span>
+                    <small>Using face simulation mode</small>
+                `;
+                
+                setTimeout(() => {
+                    faceScanned = true;
+                    faceStatus.innerHTML = '👤✅(sim)';
+                    faceMatch = 85;
+                    faceMetric.textContent = '85%';
+                    currentMessage.innerHTML = '✅ Face simulation complete! Tap fingerprint scanner 👇';
+                }, 1500);
             }
+        }
 
-            // Update fingerprint status based on face
-            function updateFingerprintStatus() {
-                if (faceScanned && !fingerScanned) {
-                    fingerprintStatus.innerHTML = '<span>🖐️</span> Tap here to scan fingerprint';
+        function stopCamera() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+        }
+
+        // Fingerprint Functions
+        function simulateFingerprint() {
+            if (fingerScanned || !faceScanned) return;
+            
+            fingerprintCard.classList.add('scanning');
+            fingerprintStatus.innerHTML = '<span>🔍</span> Scanning fingerprint... <span class="pulse-icon">⚡</span>';
+            
+            let scanProgress = 0;
+            const interval = setInterval(() => {
+                scanProgress += 10;
+                
+                if (scanProgress >= 100) {
+                    clearInterval(interval);
+                    fingerScanned = true;
+                    fingerMatch = Math.floor(Math.random() * 15) + 80;
+                    fingerMetric.textContent = fingerMatch + '%';
+                    
+                    fingerprintStatus.innerHTML = '<span>✅</span> Fingerprint verified!';
+                    fingerprintStatus.classList.add('verified');
+                    fingerprintIcon.innerHTML = '🖐️✅';
+                    fingerStatus.innerHTML = '🖐️✅';
+                    fingerprintCard.classList.remove('scanning');
+                    
+                    currentMessage.innerHTML = '✅✅ Ready! Press INITIATE LOVE SCAN';
+                    scanButton.style.boxShadow = '0 0 50px #7fff7f, 0 15px 25px rgba(255,0,0,0.5)';
+                } else {
+                    fingerprintStatus.innerHTML = `<span>🔍</span> Scanning... ${scanProgress}% ⚡`;
                 }
-            }
+            }, 100);
+        }
 
-            // ==================== Bio Scan Initiation ====================
-            function startBioScan() {
-                if (scanActive) return;
-                if (!faceScanned || !fingerScanned) {
-                    currentMessage.innerHTML = '<span>⚠️</span> Complete face AND fingerprint scan first! <span>⚠️</span>';
-                    
-                    if (!faceScanned) startCamera();
-                    
+        function updateFingerprintStatus() {
+            if (faceScanned && !fingerScanned) {
+                fingerprintStatus.innerHTML = '<span>🖐️</span> Tap to scan fingerprint';
+            }
+        }
+
+        // Scan Function
+        function startScan() {
+            if (scanActive) return;
+            if (!faceScanned || !fingerScanned) {
+                currentMessage.innerHTML = '⚠️ Complete face AND fingerprint scan first! ⚠️';
+                if (!faceScanned) startCamera();
+                return;
+            }
+            
+            scanActive = true;
+            progress = 0;
+            progressBar.style.display = 'block';
+            scanButton.classList.add('disabled');
+            scanFrame.classList.add('active');
+            bioMetrics.style.display = 'grid';
+            
+            // Start heart rate simulation
+            if (heartRateInterval) clearInterval(heartRateInterval);
+            heartRateInterval = setInterval(() => {
+                if (scanActive) {
+                    heartMetric.textContent = Math.floor(Math.random() * 40 + 70) + ' BPM';
+                }
+            }, 1000);
+            
+            let msgIndex = 0;
+            const msgInterval = setInterval(() => {
+                if (!scanActive) {
+                    clearInterval(msgInterval);
                     return;
                 }
                 
-                scanActive = true;
-                progress = 0;
-                progressContainer.style.display = 'block';
-                scanBtn.classList.add('disabled');
-                scanOverlay.style.display = 'block';
+                if (msgIndex < scanMessages.length) {
+                    currentMessage.innerHTML = scanMessages[msgIndex];
+                    msgIndex++;
+                }
+            }, 700);
+            
+            scanInterval = setInterval(() => {
+                if (!scanActive) {
+                    clearInterval(scanInterval);
+                    return;
+                }
                 
-                // Show bio panel
-                biometricsPanel.style.display = 'grid';
+                progress += 1;
+                progressFill.style.width = progress + '%';
                 
-                // Update heart rate randomly
-                if (heartRateInterval) clearInterval(heartRateInterval);
-                heartRateInterval = setInterval(() => {
-                    if (scanActive) {
-                        heartRate.textContent = Math.floor(Math.random() * 40 + 70) + ' BPM';
-                    }
-                }, 1000);
+                faceMetric.textContent = Math.min(faceMatch, progress) + '%';
+                fingerMetric.textContent = Math.min(fingerMatch, progress) + '%';
                 
-                // Start progress
-                let msgIndex = 0;
-                const msgInterval = setInterval(() => {
-                    if (!scanActive) {
-                        clearInterval(msgInterval);
-                        return;
-                    }
-                    
-                    if (msgIndex < scanMessages.length) {
-                        currentMessage.innerHTML = `<span>🔬</span> ${scanMessages[msgIndex]} <span>⚡</span>`;
-                        msgIndex++;
-                    }
-                }, 600);
-                
-                // Progress bar increment
-                scanInterval = setInterval(() => {
-                    if (!scanActive) {
-                        clearInterval(scanInterval);
-                        return;
-                    }
-                    
-                    progress += 1;
-                    if (progress > 100) progress = 100;
-                    
-                    progressBar.style.width = progress + '%';
-                    
-                    // Update bio values during scan
-                    faceMatchValue.textContent = Math.min(faceMatchPercent, progress) + '%';
-                    fingerMatchValue.textContent = Math.min(fingerMatchPercent, progress) + '%';
-                    loveDNA.textContent = (progress + 10) + '%';
-                    
-                    if (progress >= 100) {
-                        clearInterval(scanInterval);
-                        clearInterval(msgInterval);
-                        finishBioScan();
-                    }
-                }, 50); // 5 seconds total
-            }
-
-            // ==================== Finish Scan ====================
-            function finishBioScan() {
-                scanActive = false;
-                scanOverlay.style.display = 'none';
-                
-                if (heartRateInterval) {
+                if (progress >= 100) {
+                    clearInterval(scanInterval);
+                    clearInterval(msgInterval);
                     clearInterval(heartRateInterval);
-                    heartRateInterval = null;
+                    finishScan();
                 }
-                
-                // Calculate final love percentage (bio weighted)
-                const faceWeight = 0.4;
-                const fingerWeight = 0.4;
-                const randomFactor = 0.2;
-                
-                const lovePercent = Math.floor(
-                    (faceMatchPercent * faceWeight) + 
-                    (fingerMatchPercent * fingerWeight) + 
-                    (Math.random() * 20) + 5
-                );
-                
-                const finalPercent = Math.min(98, Math.max(70, lovePercent));
-                
-                // Set result
-                percentageEl.textContent = finalPercent + '%';
-                resultDesc.textContent = resultDescriptions[Math.floor(Math.random() * resultDescriptions.length)];
-                playfulLine.textContent = playfulLines[Math.floor(Math.random() * playfulLines.length)];
-                
-                // Set conf values
-                faceConf.textContent = faceMatchPercent + '%';
-                fingerConf.textContent = fingerMatchPercent + '%';
-                dnaConf.textContent = Math.floor(Math.random() * 5 + 95) + '%';
-                
-                resultCard.classList.remove('hidden');
-                actionButtons.style.display = 'flex';
-                
-                // Burst effect
-                createBioBurst();
-                
-                // Vibrate if supported
-                if (window.navigator && window.navigator.vibrate) {
-                    window.navigator.vibrate([200, 100, 200]);
-                }
+            }, 50);
+        }
+
+        // Finish Scan
+        function finishScan() {
+            scanActive = false;
+            scanFrame.classList.remove('active');
+            scanButton.classList.remove('disabled');
+            
+            const lovePercent = Math.floor(
+                (faceMatch * 0.4) + 
+                (fingerMatch * 0.4) + 
+                (Math.random() * 20) + 5
+            );
+            
+            const finalPercent = Math.min(98, Math.max(70, lovePercent));
+            
+            lovePercentage.textContent = finalPercent + '%';
+            resultText.textContent = resultDescriptions[Math.floor(Math.random() * resultDescriptions.length)];
+            resultMessage.textContent = playfulMessages[Math.floor(Math.random() * playfulMessages.length)];
+            
+            faceResult.textContent = faceMatch + '%';
+            fingerResult.textContent = fingerMatch + '%';
+            dnaResult.textContent = Math.floor(Math.random() * 5 + 95) + '%';
+            
+            resultCard.classList.add('show');
+            
+            // Create confetti
+            createConfetti();
+            
+            // Vibrate
+            if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+        }
+
+        // Confetti
+        function createConfetti() {
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'fixed';
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.top = '-10px';
+                    confetti.style.fontSize = (Math.random() * 20 + 10) + 'px';
+                    confetti.style.pointerEvents = 'none';
+                    confetti.style.zIndex = '9999';
+                    confetti.style.animation = 'floatDown 2s linear forwards';
+                    confetti.innerHTML = ['❤️', '💘', '💖', '💗', '💓', '✨'][Math.floor(Math.random() * 6)];
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => confetti.remove(), 2000);
+                }, i * 30);
             }
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes floatDown {
+                    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+                    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
 
-            // ==================== Bio Burst Effect ====================
-            function createBioBurst() {
-                for (let i = 0; i < 30; i++) {
-                    setTimeout(() => {
-                        const burst = document.createElement('div');
-                        burst.style.position = 'fixed';
-                        burst.style.left = Math.random() * 100 + '%';
-                        burst.style.top = Math.random() * 100 + '%';
-                        burst.style.fontSize = (Math.random() * 30 + 20) + 'px';
-                        burst.style.pointerEvents = 'none';
-                        burst.style.zIndex = '9999';
-                        burst.style.animation = 'floatUp 2s forwards';
-                        burst.style.color = ['#ff69b4', '#ff1493', '#ffb6c1', '#ffffff'][Math.floor(Math.random() * 4)];
-                        burst.textContent = ['🧬', '🔬', '❤️', '💘', '🖐️', '👤', '✨', '💕', '💗'][Math.floor(Math.random() * 9)];
-                        document.body.appendChild(burst);
-                        
-                        setTimeout(() => burst.remove(), 2000);
-                    }, i * 50);
-                }
-                
-                // Add animation if not exists
-                if (!document.getElementById('burstStyle')) {
-                    const style = document.createElement('style');
-                    style.id = 'burstStyle';
-                    style.textContent = `
-                        @keyframes floatUp {
-                            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-                            100% { transform: translateY(-200px) rotate(360deg); opacity: 0; }
-                        }
-                    `;
-                    document.head.appendChild(style);
-                }
+        // Share Text
+        function shareText() {
+            const name = nameInput.value || 'My Love';
+            const text = `💘 LOVE SCAN RESULT 💘
+            
+${lovePercentage.textContent} ${resultText.textContent}
+${resultMessage.textContent}
+
+For: ${name}
+Face Match: ${faceResult.textContent}
+Fingerprint: ${fingerResult.textContent}
+DNA Match: ${dnaResult.textContent}
+
+✨ Generated by Love Scanner 3000 ✨`;
+            
+            if (navigator.share) {
+                navigator.share({ title: 'Love Scan Result', text: text });
+            } else {
+                navigator.clipboard.writeText(text);
+                alert('✨ Result copied to clipboard!');
             }
+        }
 
-            // ==================== Share Bio Result ====================
-            function shareBioResult() {
-                const name = nameInput.value.trim() || 'Subject-271';
-                const percent = percentageEl.textContent;
-                const desc = resultDesc.textContent;
-                const line = playfulLine.textContent;
-                
-                const shareText = `🧬 BIO-METRIC LOVE SCAN REPORT 🧬
-                
-${percent} ${desc}
-${line}
-                
-📊 Bio Data:
-• Face Match: ${faceConf.textContent}
-• Fingerprint: ${fingerConf.textContent}
-• DNA Match: ${dnaConf.textContent}
-• Heart Rate: ${heartRate.textContent}
+        // Reset
+        function resetScan() {
+            stopCamera();
+            
+            faceScanned = false;
+            fingerScanned = false;
+            scanActive = false;
+            progress = 0;
+            
+            faceStatus.innerHTML = '👤';
+            fingerStatus.innerHTML = '🖐️';
+            
+            fingerprintStatus.innerHTML = '<span>🖐️</span> Tap to scan fingerprint';
+            fingerprintStatus.classList.remove('verified');
+            fingerprintIcon.innerHTML = '🖐️🔍';
+            
+            progressBar.style.display = 'none';
+            progressFill.style.width = '0%';
+            resultCard.classList.remove('show');
+            bioMetrics.style.display = 'none';
+            scanButton.classList.remove('disabled');
+            scanButton.style.boxShadow = '';
+            scanFrame.classList.remove('active');
+            
+            currentMessage.innerHTML = '✨ Ready to scan your love frequency ✨';
+            
+            faceMetric.textContent = '0%';
+            fingerMetric.textContent = '0%';
+            heartMetric.textContent = '-- BPM';
+            
+            startCamera();
+        }
 
-Subject: ${name}
-🔬 Generated by Bio-Love Scanner · Umar Technologies 🔬`;
+        // ============== LOVE LETTER FUNCTIONS ==============
+        function generateLoveLetter() {
+            const userMessage = letterInput.value.trim();
+            if (!userMessage) {
+                alert('💌 Write something from your heart!');
+                return;
+            }
+            
+            const name = nameInput.value.trim() || 'My Love';
+            const romanticOpeners = [
+                "My dearest",
+                "To my beloved",
+                "My sweetest",
+                "To the one I adore",
+                "My darling"
+            ];
+            
+            const romanticClosers = [
+                "Forever yours",
+                "With all my love",
+                "Yours always",
+                "Eternally yours",
+                "Love you forever"
+            ];
+            
+            const opener = romanticOpeners[Math.floor(Math.random() * romanticOpeners.length)];
+            const closer = romanticClosers[Math.floor(Math.random() * romanticClosers.length)];
+            
+            letterTo.textContent = `${opener} ${name},`;
+            letterContent.textContent = userMessage;
+            letterSignature.innerHTML = `${closer},<br><span style="font-size: 28px;">❤️ ${nameInput.value || 'Me'} ❤️</span>`;
+            
+            loveLetterCard.classList.add('show');
+            
+            // Animate
+            createMiniConfetti();
+        }
+
+        function createMiniConfetti() {
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.style.position = 'fixed';
+                    heart.style.left = Math.random() * 100 + '%';
+                    heart.style.top = '50%';
+                    heart.style.fontSize = '20px';
+                    heart.style.pointerEvents = 'none';
+                    heart.style.zIndex = '10000';
+                    heart.style.animation = 'letterHeart 1s ease-out forwards';
+                    heart.innerHTML = ['💌', '❤️', '💘', '💖', '💗'][Math.floor(Math.random() * 5)];
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => heart.remove(), 1000);
+                }, i * 50);
+            }
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes letterHeart {
+                    0% { transform: translateY(0) scale(1); opacity: 1; }
+                    100% { transform: translateY(-100px) scale(2); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        // Share Letter as Image
+        async function shareLetterAsImage() {
+            if (!loveLetterCard.classList.contains('show')) {
+                alert('💌 Generate a letter first!');
+                return;
+            }
+            
+            try {
+                const canvas = await html2canvas(loveLetterCard, {
+                    scale: 2,
+                    backgroundColor: null,
+                    allowTaint: true,
+                    useCORS: true,
+                    logging: false
+                });
+                
+                const imageData = canvas.toDataURL('image/png');
                 
                 if (navigator.share) {
+                    const blob = await (await fetch(imageData)).blob();
+                    const file = new File([blob], 'love-letter.png', { type: 'image/png' });
+                    
                     navigator.share({
-                        title: 'Bio-Metric Love Scan',
-                        text: shareText,
+                        title: 'My Love Letter',
+                        text: 'A beautiful love letter 💌',
+                        files: [file]
                     }).catch(() => {
-                        fallbackShare(shareText);
+                        downloadImage(imageData);
                     });
                 } else {
-                    fallbackShare(shareText);
+                    downloadImage(imageData);
                 }
+            } catch (err) {
+                console.log('Share error:', err);
+                alert('✨ Sharing not available - saved to downloads!');
+                const canvas = await html2canvas(loveLetterCard);
+                downloadImage(canvas.toDataURL('image/png'));
             }
-            
-            function fallbackShare(text) {
-                navigator.clipboard.writeText(text).then(() => {
-                    alert('🧬 Bio-report copied to clipboard!');
-                }).catch(() => {
-                    alert('Manual copy:\n\n' + text);
-                });
-            }
+        }
+        
+        function downloadImage(dataUrl) {
+            const link = document.createElement('a');
+            link.download = 'love-letter.png';
+            link.href = dataUrl;
+            link.click();
+        }
 
-            // ==================== Reset ====================
-            function resetEverything() {
-                // Stop camera
-                stopCamera();
-                
-                // Clear intervals
-                if (heartRateInterval) {
-                    clearInterval(heartRateInterval);
-                    heartRateInterval = null;
-                }
-                if (scanInterval) {
-                    clearInterval(scanInterval);
-                    scanInterval = null;
-                }
-                
-                // Reset state
-                faceScanned = false;
-                fingerScanned = false;
-                scanActive = false;
-                progress = 0;
-                
-                // Reset UI
-                scanOverlay.style.display = 'none';
-                progressContainer.style.display = 'none';
-                resultCard.classList.add('hidden');
-                actionButtons.style.display = 'none';
-                biometricsPanel.style.display = 'none';
-                scanBtn.classList.remove('disabled');
-                scanBtn.style.boxShadow = '';
-                
-                // Reset status icons
-                faceStatus.innerHTML = '👤';
-                fingerStatus.innerHTML = '🖐️';
-                
-                // Reset fingerprint
-                fingerprintStatus.innerHTML = '<span>🖐️</span> Tap to scan fingerprint...';
-                fingerprintStatus.classList.remove('verified');
-                fingerprintIcon.innerHTML = '🖐️🔍';
-                
-                // Reset messages
-                currentMessage.innerHTML = '<span>🧬</span> Awaiting biometric authentication <span>🔬</span>';
-                
-                // Restart camera
-                setTimeout(() => {
-                    startCamera();
-                }, 300);
-            }
+        // Save Letter
+        function saveLetter() {
+            if (!loveLetterCard.classList.contains('show')) return;
+            
+            const letterText = `💌 LOVE LETTER 💌
+            
+To: ${letterTo.textContent}
 
-            // ==================== Event Listeners ====================
-            fingerprintSection.addEventListener('click', () => {
-                if (!fingerScanned && faceScanned) {
-                    simulateFingerprintScan();
-                } else if (!faceScanned) {
-                    currentMessage.innerHTML = '<span>⚠️</span> Face scan required first! <span>⚠️</span>';
-                    startCamera();
-                }
-            });
-            
-            scanBtn.addEventListener('click', startBioScan);
-            scanAgainBtn.addEventListener('click', resetEverything);
-            shareBioBtn.addEventListener('click', shareBioResult);
-            
-            // Initialize camera on load
-            window.addEventListener('load', () => {
-                startCamera();
-                
-                // Set initial random values
-                setInterval(() => {
-                    if (!scanActive && !resultCard.classList.contains('hidden')) {
-                        // Update heart rate randomly
-                        heartRate.textContent = Math.floor(Math.random() * 30 + 65) + ' BPM';
-                    }
-                }, 3000);
-            });
-            
-            // Cleanup on page hide
-            window.addEventListener('beforeunload', () => {
-                stopCamera();
-                if (heartRateInterval) clearInterval(heartRateInterval);
-                if (scanInterval) clearInterval(scanInterval);
-            });
+${letterContent.textContent}
 
-            // Enter key for scan
-            nameInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    startBioScan();
-                }
-            });
+${letterSignature.textContent.replace(/<br>/g, '\n')}
+
+Generated with ❤️ by Love Scanner`;
             
-            // Prevent double-tap zoom on buttons
-            const buttons = document.querySelectorAll('button');
-            buttons.forEach(button => {
-                button.addEventListener('touchstart', (e) => {
-                    e.preventDefault();
-                }, { passive: false });
+            navigator.clipboard.writeText(letterText).then(() => {
+                alert('💌 Letter copied to clipboard!');
             });
+        }
+
+        // New Letter
+        function newLetter() {
+            loveLetterCard.classList.remove('show');
+            letterInput.value = '';
+            letterInput.focus();
+        }
+
+        // Event Listeners
+        fingerprintCard.addEventListener('click', simulateFingerprint);
+        scanButton.addEventListener('click', startScan);
+        scanAgainBtn.addEventListener('click', resetScan);
+        shareTextBtn.addEventListener('click', shareText);
+        
+        // Letter Event Listeners
+        generateLetterBtn.addEventListener('click', generateLoveLetter);
+        shareLetterBtn.addEventListener('click', shareLetterAsImage);
+        saveLetterBtn.addEventListener('click', saveLetter);
+        newLetterBtn.addEventListener('click', newLetter);
+
+        // Initialize
+        window.addEventListener('load', () => {
+            createFloatingHearts();
+            startCamera();
             
-            // Handle visibility change (pause camera when tab hidden)
-            document.addEventListener('visibilitychange', () => {
-                if (document.hidden) {
-                    if (stream) {
-                        stream.getTracks().forEach(track => track.enabled = false);
-                    }
-                } else {
-                    if (stream) {
-                        stream.getTracks().forEach(track => track.enabled = true);
-                    }
+            // Random heart rate updates
+            setInterval(() => {
+                if (!scanActive && resultCard.classList.contains('show')) {
+                    heartMetric.textContent = Math.floor(Math.random() * 30 + 65) + ' BPM';
                 }
-            });
-        })();
+            }, 3000);
+        });
+
+        // Cleanup
+        window.addEventListener('beforeunload', () => {
+            stopCamera();
+            if (heartRateInterval) clearInterval(heartRateInterval);
+        });
     </script>
 </body>
-</html>
+    </html>
